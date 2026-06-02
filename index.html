@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Fitness - Premium Gym & Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">EF</div>
+                    <span class="logo-text">Elite Fitness</span>
+                </div>
+                
+                <nav class="nav-menu">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#stats" class="nav-link">Stats</a>
+                    <a href="#membership" class="nav-link">Membership</a>
+                    <a href="#trainers" class="nav-link">Trainers</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <button class="cta-btn">Join Now</button>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="mobile-menu" id="mobileMenu">
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#stats" class="mobile-nav-link">Stats</a>
+                <a href="#membership" class="mobile-nav-link">Membership</a>
+                <a href="#trainers" class="mobile-nav-link">Trainers</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <button class="cta-btn" style="width: 100%; margin-top: 1rem;">Join Now</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310419663030790075/XArmoKZwwhRDce6TczZaro/gym-hero-bg-main-PsgUbdVqiHN455J29t26je.webp')"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <div class="accent-bar"></div>
+                    <span>Transform Your Body</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Elite Performance
+                    <span class="accent-text">Starts Here</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Join our premium fitness community and unlock your true potential with world-class trainers, state-of-the-art equipment, and personalized coaching.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="ctaButton">Start Your Journey</button>
+                    <button class="btn btn-secondary">Watch Demo</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <div class="accent-bar"></div>
+                    <span>Our Impact</span>
+                    <div class="accent-bar"></div>
+                </div>
+                <h2>Proven Results by Numbers</h2>
+                <p>Join thousands of members who have transformed their lives through our premium fitness programs and expert guidance.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Active Members</div>
+                    <div class="stat-bar"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Certified Trainers</div>
+                    <div class="stat-bar"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">Client Satisfaction %</div>
+                    <div class="stat-bar"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hours Open /7</div>
+                    <div class="stat-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans Section -->
+    <section class="membership" id="membership">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <div class="accent-bar"></div>
+                    <span>Membership Plans</span>
+                    <div class="accent-bar"></div>
+                </div>
+                <h2>Choose Your Path</h2>
+                <p>Select the perfect membership plan tailored to your fitness goals and lifestyle.</p>
+            </div>
+
+            <div class="plans-grid">
+                <!-- Starter Plan -->
+                <div class="plan-card">
+                    <h3>Starter</h3>
+                    <p class="plan-description">Perfect for fitness beginners</p>
+                    <div class="plan-price">
+                        <span class="price">$49</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="included">✓ Gym Access</li>
+                        <li class="included">✓ Equipment Training</li>
+                        <li class="excluded">✗ Group Classes</li>
+                        <li class="excluded">✗ Personal Trainer</li>
+                        <li class="excluded">✗ Nutrition Plan</li>
+                    </ul>
+                    <button class="btn btn-plan">Get Started</button>
+                </div>
+
+                <!-- Elite Plan (Featured) -->
+                <div class="plan-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3>Elite</h3>
+                    <p class="plan-description">Most popular choice</p>
+                    <div class="plan-price">
+                        <span class="price">$99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="included">✓ Gym Access</li>
+                        <li class="included">✓ Equipment Training</li>
+                        <li class="included">✓ Group Classes</li>
+                        <li class="included">✓ Personal Trainer</li>
+                        <li class="excluded">✗ Nutrition Plan</li>
+                    </ul>
+                    <button class="btn btn-plan btn-elite">Join Elite</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="plan-card">
+                    <h3>Premium</h3>
+                    <p class="plan-description">Complete transformation package</p>
+                    <div class="plan-price">
+                        <span class="price">$149</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="included">✓ Gym Access</li>
+                        <li class="included">✓ Equipment Training</li>
+                        <li class="included">✓ Group Classes</li>
+                        <li class="included">✓ Personal Trainer</li>
+                        <li class="included">✓ Nutrition Plan</li>
+                    </ul>
+                    <button class="btn btn-plan">Become Premium</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <div class="accent-bar"></div>
+                    <span>Expert Team</span>
+                    <div class="accent-bar"></div>
+                </div>
+                <h2>Meet Our Trainers</h2>
+                <p>Learn from certified professionals dedicated to your success and transformation.</p>
+            </div>
+
+            <div class="trainers-grid">
+                <!-- Trainer 1 -->
+                <div class="trainer-card">
+                    <div class="trainer-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop')"></div>
+                    <div class="trainer-info">
+                        <h3>Alex Johnson</h3>
+                        <p class="trainer-specialty">Strength & Conditioning</p>
+                        <p class="trainer-bio">Olympic-certified coach with 15+ years of experience in powerlifting and athletic performance.</p>
+                        <div class="trainer-social">
+                            <a href="#" class="social-icon">📱</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="trainer-card">
+                    <div class="trainer-image" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop')"></div>
+                    <div class="trainer-info">
+                        <h3>Maria Rodriguez</h3>
+                        <p class="trainer-specialty">HIIT & Cardio</p>
+                        <p class="trainer-bio">Certified fitness instructor specializing in high-intensity interval training and cardiovascular health.</p>
+                        <div class="trainer-social">
+                            <a href="#" class="social-icon">📱</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 3 -->
+                <div class="trainer-card">
+                    <div class="trainer-image" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop')"></div>
+                    <div class="trainer-info">
+                        <h3>David Chen</h3>
+                        <p class="trainer-specialty">Nutrition & Wellness</p>
+                        <p class="trainer-bio">Registered dietitian and wellness coach helping clients achieve sustainable lifestyle changes.</p>
+                        <div class="trainer-social">
+                            <a href="#" class="social-icon">📱</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 4 -->
+                <div class="trainer-card">
+                    <div class="trainer-image" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop')"></div>
+                    <div class="trainer-info">
+                        <h3>Sophie Laurent</h3>
+                        <p class="trainer-specialty">Yoga & Flexibility</p>
+                        <p class="trainer-bio">Certified yoga instructor and flexibility specialist dedicated to holistic wellness and mindfulness.</p>
+                        <div class="trainer-social">
+                            <a href="#" class="social-icon">📱</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <div class="accent-bar"></div>
+                    <span>Get in Touch</span>
+                    <div class="accent-bar"></div>
+                </div>
+                <h2>Ready to Transform?</h2>
+                <p>Join Elite Fitness today and start your journey to a healthier, stronger you.</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+25768857061</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@elitefitness.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Fitness Street, Gym City, GC 12345</p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-whatsapp" id="whatsappBtn">💬 Chat on WhatsApp</button>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your fitness goals..." rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">EF</div>
+                        <span>Elite Fitness</span>
+                    </div>
+                    <p>Transforming bodies, changing lives since 2015.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Personal Training</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                        <li><a href="#">Nutrition Plans</a></li>
+                        <li><a href="#">Wellness Coaching</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">in</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Fitness. All rights reserved.</p>
+                <a href="https://hppeter.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <p>Designed and developed by <span style="color: rgb(29, 151, 232); text-decoration: none;">HP Peter Tech Studio</span></p>
+                </a>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
